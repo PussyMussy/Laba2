@@ -10,14 +10,15 @@ public class job1 {
         System.out.println("Введите число: ");
         int number = scanner.nextInt();
         int x;
-        x = number / 1000;
-        if (x > 0)
-        {
-            System.out.println("Число имеет " + x + " тысяч");
+        x = number % 3;
+        if (x > 0) {
+            System.out.println("Число не делится на 3 ");
         }
         else {
-            System.out.println("Число не удовлетворяет условию (оно меньше 1000)");
-            scanner.close();
+            System.out.println("Число делится на 3");
         }
+        scanner.close();
+
     }
+
 }
